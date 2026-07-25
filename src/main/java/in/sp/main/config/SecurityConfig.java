@@ -62,6 +62,8 @@ public class SecurityConfig {
                 .sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> auth
                 .requestMatchers(
+                        "/",
+                        "/error",
                         "/api/auth/**",
                         "/api/attendance/qr/scan",
                         "/api/face/scan",
@@ -70,6 +72,7 @@ public class SecurityConfig {
                         "/api/attendance/sessions/active",
                         "/actuator/health"
                 ).permitAll()
+                .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
                 .requestMatchers(HttpMethod.GET, "/api/teachers/**")
                 .hasAnyRole("ADMIN", "TEACHER")
                 .requestMatchers("/api/teachers/**")
@@ -88,6 +91,7 @@ public class SecurityConfig {
 
         configuration.setAllowedOriginPatterns(List.of(
                 "http://localhost:5173",
+                "https://smart-attendance-system-gray-delta.vercel.app",
                 "https://*.vercel.app"
         ));
 
