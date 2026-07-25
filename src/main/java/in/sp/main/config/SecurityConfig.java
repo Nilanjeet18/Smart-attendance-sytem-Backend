@@ -85,36 +85,37 @@ public class SecurityConfig {
     }
 
     @Bean
-    public CorsConfigurationSource corsConfigurationSource() {
+public CorsConfigurationSource corsConfigurationSource() {
 
-        CorsConfiguration configuration = new CorsConfiguration();
+    CorsConfiguration configuration = new CorsConfiguration();
 
-        configuration.setAllowedOriginPatterns(List.of(
-                "http://localhost:5173",
-                "https://smart-attendance-system-gray-delta.vercel.app",
-                "https://*.vercel.app"
-        ));
+    configuration.setAllowedOrigins(List.of(
+            "http://localhost:5173",
+            "https://smart-attendance-system-cpt2lrb1k-nilanjeet-gugales-projects.vercel.app"
+    ));
 
-        configuration.setAllowedMethods(List.of(
-                "GET",
-                "POST",
-                "PUT",
-                "DELETE",
-                "PATCH",
-                "OPTIONS"
-        ));
+    configuration.setAllowedMethods(List.of(
+            "GET",
+            "POST",
+            "PUT",
+            "DELETE",
+            "PATCH",
+            "OPTIONS"
+    ));
 
-        configuration.setAllowedHeaders(List.of("*"));
+    configuration.setAllowedHeaders(List.of("*"));
 
-        configuration.setAllowCredentials(true);
+    configuration.setExposedHeaders(List.of("Authorization"));
 
-        UrlBasedCorsConfigurationSource source
-                = new UrlBasedCorsConfigurationSource();
+    configuration.setAllowCredentials(true);
 
-        source.registerCorsConfiguration("/**", configuration);
+    UrlBasedCorsConfigurationSource source =
+            new UrlBasedCorsConfigurationSource();
 
-        return source;
-    }
+    source.registerCorsConfiguration("/**", configuration);
+
+    return source;
+}
 
     @Bean
     public UserDetailsService userDetailsService() {
