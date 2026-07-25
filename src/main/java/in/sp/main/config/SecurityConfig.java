@@ -87,38 +87,24 @@ public class SecurityConfig {
 
         CorsConfiguration configuration = new CorsConfiguration();
 
-        configuration.setAllowedOrigins(List.of(
+        configuration.setAllowedOriginPatterns(List.of(
                 "http://localhost:5173",
-                "https://smart-attendance-system-cpt2lrb1k-nilanjeet-gugales-projects.vercel.app",
-                "https://smart-attendance-system-git-main-nilanjeet-gugales-projects.vercel.app"
+                "https://*.vercel.app"
         ));
 
         configuration.setAllowedMethods(List.of(
-                "GET",
-                "POST",
-                "PUT",
-                "DELETE",
-                "PATCH",
-                "OPTIONS"
+                "GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"
         ));
 
         configuration.setAllowedHeaders(List.of(
-                "Authorization",
-                "Content-Type",
-                "Accept",
-                "Origin",
-                "X-Requested-With"
+                "Authorization", "Content-Type", "Accept", "Origin", "X-Requested-With"
         ));
 
-        configuration.setExposedHeaders(List.of(
-                "Authorization"
-        ));
+        configuration.setExposedHeaders(List.of("Authorization"));
 
         configuration.setAllowCredentials(true);
 
-        UrlBasedCorsConfigurationSource source
-                = new UrlBasedCorsConfigurationSource();
-
+        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         source.registerCorsConfiguration("/**", configuration);
 
         return source;
