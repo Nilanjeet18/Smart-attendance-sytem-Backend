@@ -31,8 +31,8 @@ public class FaceDetectionController {
     // ── Helper: body madhun image kadhto ─────────────────────────────────
 
     /**
-     * Body madhe "faceImageBase64" kiva "imageBase64" — donhi accept karto.
-     * "data:image/..." prefix nahi asel tar aapobhap add karto.
+     * The request body accepts either faceImageBase64 or imageBase64.
+     * If the data:image/... prefix is missing, it is added automatically.
      */
     private String extractImage(Map<String, String> body) {
         // Key 1: faceImageBase64
@@ -47,7 +47,7 @@ public class FaceDetectionController {
         }
         if (image == null || image.isBlank()) {
             throw new AttendanceException(
-                "Body madhe 'faceImageBase64' field required aahe. " +
+                "Body inside 'faceImageBase64' field required. " +
                 "Example: { \"faceImageBase64\": \"data:image/jpeg;base64,/9j/...\" }",
                 "MISSING_IMAGE");
         }
@@ -61,7 +61,7 @@ public class FaceDetectionController {
     // ── Face Registration ─────────────────────────────────────────────────
 
     /**
-     * Student cha face register karo.
+     * Register the student's face.
      * Body: { "faceImageBase64": "data:image/jpeg;base64,..." }
      *
      * POST /api/face/register/{studentId}
@@ -79,7 +79,7 @@ public class FaceDetectionController {
     }
 
     /**
-     * File upload ne face register karo (multipart/form-data).
+     * Register the student's face using file upload (**multipart/form-data**).
      * POST /api/face/register/{studentId}/upload
      */
     @PostMapping("/register/{studentId}/upload")
@@ -89,11 +89,11 @@ public class FaceDetectionController {
             @RequestParam("file") MultipartFile file) {
         try {
             if (file.isEmpty()) {
-                throw new AttendanceException("File empty aahe", "EMPTY_FILE");
+                throw new AttendanceException("File is empty", "EMPTY_FILE");
             }
             String mimeType = file.getContentType();
             if (mimeType == null || !mimeType.startsWith("image/")) {
-                throw new AttendanceException("Fakt image files accept hotaat", "INVALID_FILE_TYPE");
+                throw new AttendanceException("only image files are accepted", "INVALID_FILE_TYPE");
             }
             byte[] bytes   = file.getBytes();
             String base64  = Base64.getEncoder().encodeToString(bytes);

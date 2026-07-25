@@ -19,9 +19,10 @@ public interface QRTokenRepository extends JpaRepository<QRToken, Long> {
 
     Optional<QRToken> findBySessionId(Long sessionId);
 
-    // ✅ FIX: generateQRForSession madhe juna token delete karayla lagto.
-    // Naahi tar "Duplicate entry for key qr_tokens.UKhk82x0c4k6xidijd98am9ek4r"
-    // yet hota karan session_id column var UNIQUE constraint aahe.
+    // ✅ Fix: The old token must be deleted in generateQRForSession before generating a new one.
+    // Otherwise, a duplicate entry error occurs because 
+    // the session_id column has a UNIQUE constraint.
+    
     @Modifying
     @Transactional
     @Query("DELETE FROM QRToken qt WHERE qt.session.id = :sessionId")

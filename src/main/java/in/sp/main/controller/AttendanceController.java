@@ -54,9 +54,9 @@ public class AttendanceController {
     }
 
     /**
-     * 🆕 PUBLIC endpoint — Home page var aaj che sessions dakhavto.
-     * Students la token lagat nahi — fakt today's sessions list milte.
-     * SecurityConfig madhe "/api/attendance/sessions/date/**" permit aahe.
+     * 🆕 This public endpoint displays today’s sessions on the Home page.
+     * Students do not need a token to access the session list.
+     * The /api/attendance/sessions/date/** endpoint is permitted in SecurityConfig.
      */
     @GetMapping("/sessions/date/{date}")
     public ResponseEntity<List<SessionDTO>> getSessionsByDate(
@@ -78,8 +78,8 @@ public class AttendanceController {
     }
 
     /**
-     * 🆕 PUBLIC endpoint — Fakt ACTIVE sessions return karto.
-     * Home page var "Live Now" section sathi use hoto.
+     * 🆕 This public endpoint returns only active sessions.
+     * It is used for the "Live Now" section on the Home page.
      * GET /api/attendance/sessions/active
      */
     @GetMapping("/sessions/active")

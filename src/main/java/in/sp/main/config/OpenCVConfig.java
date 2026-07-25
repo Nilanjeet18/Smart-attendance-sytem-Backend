@@ -5,9 +5,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * OpenCV Config — Pure Java implementation vaaparto
- * Native library chi garaj nahi!
- * FaceDetectionUtil madhe pure Java (AWT/ImageIO) vaaparto.
+ * OpenCV Configuration uses a pure Java implementation
+ * so no native library is required
+ * FaceDetectionUtil uses pure Java with AWT/ImageIO.
  */
 @Slf4j
 @Configuration
