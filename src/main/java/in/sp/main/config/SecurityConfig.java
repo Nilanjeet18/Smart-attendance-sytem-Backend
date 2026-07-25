@@ -57,53 +57,71 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
-            .cors(cors -> cors.configurationSource(corsConfigurationSource()))
-            .csrf(csrf -> csrf.disable())
-            .sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-            .authorizeHttpRequests(auth -> auth
-                // ── Public endpoints ──────────────────────────────────────
+                .cors(cors -> cors.configurationSource(corsConfigurationSource()))
+                .csrf(csrf -> csrf.disable())
+                .sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+                .authorizeHttpRequests(auth -> auth
                 .requestMatchers(
-                    "/api/auth/**",
-
-                    // QR + Face scan — students use these without login
-                    "/api/attendance/qr/scan",
-                    "/api/face/scan",
-                    "/api/face/detect",
-
-                    // 🆕 Public session listing — Home page students view
-                    // GET /api/attendance/sessions/date/{date}  → today's sessions
-                    // GET /api/attendance/sessions/active        → live ACTIVE sessions
-                    "/api/attendance/sessions/date/**",
-                    "/api/attendance/sessions/active",
-
-                    "/actuator/health"
+                        "/api/auth/**",
+                        "/api/attendance/qr/scan",
+                        "/api/face/scan",
+                        "/api/face/detect",
+                        "/api/attendance/sessions/date/**",
+                        "/api/attendance/sessions/active",
+                        "/actuator/health"
                 ).permitAll()
-
-                // ── Admin only ────────────────────────────────────────────
                 .requestMatchers(HttpMethod.GET, "/api/teachers/**")
                 .hasAnyRole("ADMIN", "TEACHER")
-
                 .requestMatchers("/api/teachers/**")
                 .hasRole("ADMIN")
-
-                // ── Everything else needs login ───────────────────────────
                 .anyRequest().authenticated()
-            )
-            .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
+                )
+                .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
 
         return http.build();
+    }
+
+    @Bean
+    public CorsConfigurationSource corsConfigurationSource() {
+
+        CorsConfiguration configuration = new CorsConfiguration();
+
+        configuration.setAllowedOriginPatterns(List.of(
+                "http://localhost:5173",
+                "https://*.vercel.app"
+        ));
+
+        configuration.setAllowedMethods(List.of(
+                "GET",
+                "POST",
+                "PUT",
+                "DELETE",
+                "PATCH",
+                "OPTIONS"
+        ));
+
+        configuration.setAllowedHeaders(List.of("*"));
+
+        configuration.setAllowCredentials(true);
+
+        UrlBasedCorsConfigurationSource source
+                = new UrlBasedCorsConfigurationSource();
+
+        source.registerCorsConfiguration("/**", configuration);
+
+        return source;
     }
 
     @Bean
     public UserDetailsService userDetailsService() {
         return email -> {
             Teacher teacher = teacherRepository.findByEmail(email)
-                .orElseThrow(() -> new UsernameNotFoundException("Teacher not found: " + email));
+                    .orElseThrow(() -> new UsernameNotFoundException("Teacher not found: " + email));
             return org.springframework.security.core.userdetails.User
-                .withUsername(teacher.getEmail())
-                .password(teacher.getPassword())
-                .authorities(new SimpleGrantedAuthority("ROLE_" + teacher.getRole().name()))
-                .build();
+                    .withUsername(teacher.getEmail())
+                    .password(teacher.getPassword())
+                    .authorities(new SimpleGrantedAuthority("ROLE_" + teacher.getRole().name()))
+                    .build();
         };
     }
 
@@ -118,7 +136,6 @@ public class SecurityConfig {
     }
 
     // ── JWT Filter ────────────────────────────────────────────────────────
-
     @Slf4j
     @Component
     @RequiredArgsConstructor
@@ -147,8 +164,8 @@ public class SecurityConfig {
                     Teacher teacher = teacherRepository.findByEmail(email).orElse(null);
                     if (teacher != null && jwtUtil.isTokenValid(token, email)) {
                         var authToken = new UsernamePasswordAuthenticationToken(
-                            email, null,
-                            List.of(new SimpleGrantedAuthority("ROLE_" + teacher.getRole().name()))
+                                email, null,
+                                List.of(new SimpleGrantedAuthority("ROLE_" + teacher.getRole().name()))
                         );
                         SecurityContextHolder.getContext().setAuthentication(authToken);
                     }
@@ -161,7 +178,6 @@ public class SecurityConfig {
     }
 
     // ── JWT Utility ───────────────────────────────────────────────────────
-
     @Component
     public static class JwtUtil {
 
@@ -177,12 +193,12 @@ public class SecurityConfig {
 
         public String generateToken(String email, String role) {
             return Jwts.builder()
-                .setSubject(email)
-                .claim("role", role)
-                .setIssuedAt(new Date())
-                .setExpiration(new Date(System.currentTimeMillis() + expirationMs))
-                .signWith(getKey(), SignatureAlgorithm.HS256)
-                .compact();
+                    .setSubject(email)
+                    .claim("role", role)
+                    .setIssuedAt(new Date())
+                    .setExpiration(new Date(System.currentTimeMillis() + expirationMs))
+                    .signWith(getKey(), SignatureAlgorithm.HS256)
+                    .compact();
         }
 
         public String extractEmail(String token) {
@@ -193,7 +209,7 @@ public class SecurityConfig {
             try {
                 Claims claims = extractClaims(token);
                 return claims.getSubject().equals(email)
-                    && claims.getExpiration().after(new Date());
+                        && claims.getExpiration().after(new Date());
             } catch (Exception e) {
                 return false;
             }
@@ -201,10 +217,10 @@ public class SecurityConfig {
 
         private Claims extractClaims(String token) {
             return Jwts.parserBuilder()
-                .setSigningKey(getKey())
-                .build()
-                .parseClaimsJws(token)
-                .getBody();
+                    .setSigningKey(getKey())
+                    .build()
+                    .parseClaimsJws(token)
+                    .getBody();
         }
     }
 }
