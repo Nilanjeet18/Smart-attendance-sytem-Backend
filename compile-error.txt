@@ -1,0 +1,637 @@
+Picked up JAVA_TOOL_OPTIONS: -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< com.attendance:smart-attendance-system >---------------
+[INFO] Building Smart Attendance System 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ smart-attendance-system ---
+[INFO] Deleting D:\Spring Boot Practice Projects\smart-attendance-system\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ smart-attendance-system ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ smart-attendance-system ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 43 source files with javac [debug release 17] to target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[40,20] cannot find symbol
+  symbol:   method getStatus()
+  location: variable session of type in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[60,82] cannot find symbol
+  symbol:   method getCourse()
+  location: variable session of type in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[62,27] cannot find symbol
+  symbol:   method getFaceEncoding()
+  location: variable s of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[62,58] cannot find symbol
+  symbol:   method getIsActive()
+  location: variable s of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[75,44] cannot find symbol
+  symbol:   method getFaceEncoding()
+  location: variable candidate of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[76,13] cannot find symbol
+  symbol:   variable log
+  location: class in.sp.main.service.FaceDetectionService
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[76,63] cannot find symbol
+  symbol:   method getRollNumber()
+  location: variable candidate of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[85,49] cannot find symbol
+  symbol:   method getFaceEncoding()
+  location: variable matchedStudent of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[90,85] cannot find symbol
+  symbol:   method getId()
+  location: variable matchedStudent of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[91,67] cannot find symbol
+  symbol:   method getRollNumber()
+  location: variable matchedStudent of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[95,51] cannot find symbol
+  symbol:   method builder()
+  location: class in.sp.main.model.AttendanceRecord
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[105,9] cannot find symbol
+  symbol:   variable log
+  location: class in.sp.main.service.FaceDetectionService
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[106,27] cannot find symbol
+  symbol:   method getRollNumber()
+  location: variable matchedStudent of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[108,29] cannot find symbol
+  symbol:   method builder()
+  location: class in.sp.main.dto.AttendanceDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[109,22] cannot find symbol
+  symbol:   method getId()
+  location: variable saved of type in.sp.main.model.AttendanceRecord
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[111,38] cannot find symbol
+  symbol:   method getId()
+  location: variable matchedStudent of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[112,40] cannot find symbol
+  symbol:   method getName()
+  location: variable matchedStudent of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[113,39] cannot find symbol
+  symbol:   method getRollNumber()
+  location: variable matchedStudent of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[116,28] cannot find symbol
+  symbol:   method getMarkedAt()
+  location: variable saved of type in.sp.main.model.AttendanceRecord
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/util/FaceDetectionUtil.java:[33,13] cannot find symbol
+  symbol:   variable log
+  location: class in.sp.main.util.FaceDetectionUtil
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/util/FaceDetectionUtil.java:[36,13] cannot find symbol
+  symbol:   variable log
+  location: class in.sp.main.util.FaceDetectionUtil
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/util/FaceDetectionUtil.java:[61,13] cannot find symbol
+  symbol:   variable log
+  location: class in.sp.main.util.FaceDetectionUtil
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/util/FaceDetectionUtil.java:[85,13] cannot find symbol
+  symbol:   variable log
+  location: class in.sp.main.util.FaceDetectionUtil
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/util/FaceDetectionUtil.java:[89,13] cannot find symbol
+  symbol:   variable log
+  location: class in.sp.main.util.FaceDetectionUtil
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/util/FaceDetectionUtil.java:[131,9] cannot find symbol
+  symbol:   variable log
+  location: class in.sp.main.util.FaceDetectionUtil
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/util/FaceDetectionUtil.java:[147,21] cannot find symbol
+  symbol:   variable log
+  location: class in.sp.main.util.FaceDetectionUtil
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/controller/FaceDetectionController.java:[76,9] cannot find symbol
+  symbol:   variable log
+  location: class in.sp.main.controller.FaceDetectionController
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/controller/FaceDetectionController.java:[102,13] cannot find symbol
+  symbol:   variable log
+  location: class in.sp.main.controller.FaceDetectionController
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/controller/FaceDetectionController.java:[188,9] cannot find symbol
+  symbol:   variable log
+  location: class in.sp.main.controller.FaceDetectionController
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/controller/FaceDetectionController.java:[239,54] cannot find symbol
+  symbol:   method getHasFaceEncoding()
+  location: variable student of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/controller/FaceDetectionController.java:[242,41] cannot find symbol
+  symbol:   method getName()
+  location: variable student of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/controller/FaceDetectionController.java:[243,41] cannot find symbol
+  symbol:   method getRollNumber()
+  location: variable student of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/controller/FaceDetectionController.java:[262,16] cannot find symbol
+  symbol:   method setFaceEncoding(<nulltype>)
+  location: variable student of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/controller/FaceDetectionController.java:[263,9] cannot find symbol
+  symbol:   variable log
+  location: class in.sp.main.controller.FaceDetectionController
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[30,53] cannot find symbol
+  symbol:   method getRollNumber()
+  location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[31,79] cannot find symbol
+  symbol:   method getRollNumber()
+  location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[34,48] cannot find symbol
+  symbol:   method getEmail()
+  location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[35,77] cannot find symbol
+  symbol:   method getEmail()
+  location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[40,9] cannot find symbol
+  symbol:   variable log
+  location: class in.sp.main.service.StudentService
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[40,51] cannot find symbol
+  symbol:   method getName()
+  location: variable saved of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[40,68] cannot find symbol
+  symbol:   method getRollNumber()
+  location: variable saved of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[67,29] cannot find symbol
+  symbol:   method getName()
+  location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[68,30] cannot find symbol
+  symbol:   method getEmail()
+  location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[69,36] cannot find symbol
+  symbol:   method getPhoneNumber()
+  location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[70,35] cannot find symbol
+  symbol:   method getDepartment()
+  location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[71,33] cannot find symbol
+  symbol:   method getSemester()
+  location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[72,16] cannot find symbol
+  symbol:   method getIsActive()
+  location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[73,37] cannot find symbol
+  symbol:   method getIsActive()
+  location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[81,16] cannot find symbol
+  symbol:   method setIsActive(boolean)
+  location: variable student of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[83,9] cannot find symbol
+  symbol:   variable log
+  location: class in.sp.main.service.StudentService
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[92,9] cannot find symbol
+  symbol:   variable log
+  location: class in.sp.main.service.StudentService
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[92,69] cannot find symbol
+  symbol:   method getRollNumber()
+  location: variable student of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[95,16] cannot find symbol
+  symbol:   method setFaceEncoding(java.lang.String)
+  location: variable student of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[97,9] cannot find symbol
+  symbol:   variable log
+  location: class in.sp.main.service.StudentService
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[97,71] cannot find symbol
+  symbol:   method getRollNumber()
+  location: variable saved of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[126,31] cannot find symbol
+  symbol:   method getFaceEncoding()
+  location: variable s of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[116,26] cannot find symbol
+  symbol:   method builder()
+  location: class in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[117,18] cannot find symbol
+  symbol:   method getId()
+  location: variable s of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[118,20] cannot find symbol
+  symbol:   method getName()
+  location: variable s of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[119,26] cannot find symbol
+  symbol:   method getRollNumber()
+  location: variable s of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[120,21] cannot find symbol
+  symbol:   method getEmail()
+  location: variable s of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[121,27] cannot find symbol
+  symbol:   method getPhoneNumber()
+  location: variable s of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[122,26] cannot find symbol
+  symbol:   method getDepartment()
+  location: variable s of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[123,24] cannot find symbol
+  symbol:   method getSemester()
+  location: variable s of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[124,24] cannot find symbol
+  symbol:   method getIsActive()
+  location: variable s of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[125,32] cannot find symbol
+  symbol:   method getProfileImagePath()
+  location: variable s of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[131,23] cannot find symbol
+  symbol:   method builder()
+  location: class in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[132,22] cannot find symbol
+  symbol:   method getName()
+  location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[133,28] cannot find symbol
+  symbol:   method getRollNumber()
+  location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[134,23] cannot find symbol
+  symbol:   method getEmail()
+  location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[135,29] cannot find symbol
+  symbol:   method getPhoneNumber()
+  location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[136,28] cannot find symbol
+  symbol:   method getDepartment()
+  location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[137,26] cannot find symbol
+  symbol:   method getSemester()
+  location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[65,25] cannot find symbol
+  symbol:   method setStatus(in.sp.main.model.AttendanceSession.SessionStatus)
+  location: variable existing of type in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[66,25] cannot find symbol
+  symbol:   method setEndTime(java.time.LocalDateTime)
+  location: variable existing of type in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[68,17] cannot find symbol
+  symbol:   variable log
+  location: class in.sp.main.service.AttendanceService
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[68,90] cannot find symbol
+  symbol:   method getId()
+  location: variable existing of type in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[72,54] cannot find symbol
+  symbol:   method builder()
+  location: class in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[85,9] cannot find symbol
+  symbol:   variable log
+  location: class in.sp.main.service.AttendanceService
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[86,18] cannot find symbol
+  symbol:   method getId()
+  location: variable saved of type in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[86,34] cannot find symbol
+  symbol:   method getCourseCode()
+  location: variable course of type in.sp.main.model.Course
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[86,57] cannot find symbol
+  symbol:   method getAttendanceMode()
+  location: variable saved of type in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[90,18] cannot find symbol
+  symbol:   method getAttendanceMode()
+  location: variable saved of type in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[91,25] cannot find symbol
+  symbol:   method getAttendanceMode()
+  location: variable saved of type in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[93,69] cannot find symbol
+  symbol:   method getId()
+  location: variable saved of type in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[95,30] cannot find symbol
+  symbol:   method getQrToken()
+  location: variable qr of type in.sp.main.dto.SessionDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[96,36] cannot find symbol
+  symbol:   method getQrImageBase64()
+  location: variable qr of type in.sp.main.dto.SessionDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[97,41] cannot find symbol
+  symbol:   method getQrExpiresInSeconds()
+  location: variable qr of type in.sp.main.dto.SessionDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[106,16] cannot find symbol
+  symbol:   method setStatus(in.sp.main.model.AttendanceSession.SessionStatus)
+  location: variable session of type in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[107,16] cannot find symbol
+  symbol:   method setEndTime(java.time.LocalDateTime)
+  location: variable session of type in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[109,74] cannot find symbol
+  symbol:   method getCourse()
+  location: variable session of type in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[112,83] cannot find symbol
+  symbol:   method getId()
+  location: variable student of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[113,55] cannot find symbol
+  symbol:   method builder()
+  location: class in.sp.main.model.AttendanceRecord
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[124,9] cannot find symbol
+  symbol:   variable log
+  location: class in.sp.main.service.AttendanceService
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[135,44] cannot find symbol
+  symbol:   method getSession()
+  location: variable qrToken of type in.sp.main.model.QRToken
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[136,32] cannot find symbol
+  symbol:   method getCourse()
+  location: variable session of type in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[139,20] cannot find symbol
+  symbol:   method getStatus()
+  location: variable session of type in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[140,63] cannot find symbol
+  symbol:   method getId()
+  location: variable session of type in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[152,29] cannot find symbol
+  symbol:   method getId()
+  location: variable s of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[152,52] cannot find symbol
+  symbol:   method getId()
+  location: variable student of type in.sp.main.model.Student
+[INFO] 100 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.426 s
+[INFO] Finished at: 2026-07-25T09:15:20+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project smart-attendance-system: Compilation failure: Compilation failure: 
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[40,20] cannot find symbol
+[ERROR]   symbol:   method getStatus()
+[ERROR]   location: variable session of type in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[60,82] cannot find symbol
+[ERROR]   symbol:   method getCourse()
+[ERROR]   location: variable session of type in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[62,27] cannot find symbol
+[ERROR]   symbol:   method getFaceEncoding()
+[ERROR]   location: variable s of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[62,58] cannot find symbol
+[ERROR]   symbol:   method getIsActive()
+[ERROR]   location: variable s of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[75,44] cannot find symbol
+[ERROR]   symbol:   method getFaceEncoding()
+[ERROR]   location: variable candidate of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[76,13] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class in.sp.main.service.FaceDetectionService
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[76,63] cannot find symbol
+[ERROR]   symbol:   method getRollNumber()
+[ERROR]   location: variable candidate of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[85,49] cannot find symbol
+[ERROR]   symbol:   method getFaceEncoding()
+[ERROR]   location: variable matchedStudent of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[90,85] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable matchedStudent of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[91,67] cannot find symbol
+[ERROR]   symbol:   method getRollNumber()
+[ERROR]   location: variable matchedStudent of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[95,51] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class in.sp.main.model.AttendanceRecord
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[105,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class in.sp.main.service.FaceDetectionService
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[106,27] cannot find symbol
+[ERROR]   symbol:   method getRollNumber()
+[ERROR]   location: variable matchedStudent of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[108,29] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class in.sp.main.dto.AttendanceDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[109,22] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable saved of type in.sp.main.model.AttendanceRecord
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[111,38] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable matchedStudent of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[112,40] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: variable matchedStudent of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[113,39] cannot find symbol
+[ERROR]   symbol:   method getRollNumber()
+[ERROR]   location: variable matchedStudent of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/FaceDetectionService.java:[116,28] cannot find symbol
+[ERROR]   symbol:   method getMarkedAt()
+[ERROR]   location: variable saved of type in.sp.main.model.AttendanceRecord
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/util/FaceDetectionUtil.java:[33,13] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class in.sp.main.util.FaceDetectionUtil
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/util/FaceDetectionUtil.java:[36,13] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class in.sp.main.util.FaceDetectionUtil
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/util/FaceDetectionUtil.java:[61,13] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class in.sp.main.util.FaceDetectionUtil
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/util/FaceDetectionUtil.java:[85,13] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class in.sp.main.util.FaceDetectionUtil
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/util/FaceDetectionUtil.java:[89,13] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class in.sp.main.util.FaceDetectionUtil
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/util/FaceDetectionUtil.java:[131,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class in.sp.main.util.FaceDetectionUtil
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/util/FaceDetectionUtil.java:[147,21] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class in.sp.main.util.FaceDetectionUtil
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/controller/FaceDetectionController.java:[76,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class in.sp.main.controller.FaceDetectionController
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/controller/FaceDetectionController.java:[102,13] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class in.sp.main.controller.FaceDetectionController
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/controller/FaceDetectionController.java:[188,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class in.sp.main.controller.FaceDetectionController
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/controller/FaceDetectionController.java:[239,54] cannot find symbol
+[ERROR]   symbol:   method getHasFaceEncoding()
+[ERROR]   location: variable student of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/controller/FaceDetectionController.java:[242,41] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: variable student of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/controller/FaceDetectionController.java:[243,41] cannot find symbol
+[ERROR]   symbol:   method getRollNumber()
+[ERROR]   location: variable student of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/controller/FaceDetectionController.java:[262,16] cannot find symbol
+[ERROR]   symbol:   method setFaceEncoding(<nulltype>)
+[ERROR]   location: variable student of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/controller/FaceDetectionController.java:[263,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class in.sp.main.controller.FaceDetectionController
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[30,53] cannot find symbol
+[ERROR]   symbol:   method getRollNumber()
+[ERROR]   location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[31,79] cannot find symbol
+[ERROR]   symbol:   method getRollNumber()
+[ERROR]   location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[34,48] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[35,77] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[40,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class in.sp.main.service.StudentService
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[40,51] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: variable saved of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[40,68] cannot find symbol
+[ERROR]   symbol:   method getRollNumber()
+[ERROR]   location: variable saved of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[67,29] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[68,30] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[69,36] cannot find symbol
+[ERROR]   symbol:   method getPhoneNumber()
+[ERROR]   location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[70,35] cannot find symbol
+[ERROR]   symbol:   method getDepartment()
+[ERROR]   location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[71,33] cannot find symbol
+[ERROR]   symbol:   method getSemester()
+[ERROR]   location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[72,16] cannot find symbol
+[ERROR]   symbol:   method getIsActive()
+[ERROR]   location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[73,37] cannot find symbol
+[ERROR]   symbol:   method getIsActive()
+[ERROR]   location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[81,16] cannot find symbol
+[ERROR]   symbol:   method setIsActive(boolean)
+[ERROR]   location: variable student of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[83,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class in.sp.main.service.StudentService
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[92,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class in.sp.main.service.StudentService
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[92,69] cannot find symbol
+[ERROR]   symbol:   method getRollNumber()
+[ERROR]   location: variable student of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[95,16] cannot find symbol
+[ERROR]   symbol:   method setFaceEncoding(java.lang.String)
+[ERROR]   location: variable student of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[97,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class in.sp.main.service.StudentService
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[97,71] cannot find symbol
+[ERROR]   symbol:   method getRollNumber()
+[ERROR]   location: variable saved of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[126,31] cannot find symbol
+[ERROR]   symbol:   method getFaceEncoding()
+[ERROR]   location: variable s of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[116,26] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[117,18] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable s of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[118,20] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: variable s of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[119,26] cannot find symbol
+[ERROR]   symbol:   method getRollNumber()
+[ERROR]   location: variable s of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[120,21] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable s of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[121,27] cannot find symbol
+[ERROR]   symbol:   method getPhoneNumber()
+[ERROR]   location: variable s of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[122,26] cannot find symbol
+[ERROR]   symbol:   method getDepartment()
+[ERROR]   location: variable s of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[123,24] cannot find symbol
+[ERROR]   symbol:   method getSemester()
+[ERROR]   location: variable s of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[124,24] cannot find symbol
+[ERROR]   symbol:   method getIsActive()
+[ERROR]   location: variable s of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[125,32] cannot find symbol
+[ERROR]   symbol:   method getProfileImagePath()
+[ERROR]   location: variable s of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[131,23] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[132,22] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[133,28] cannot find symbol
+[ERROR]   symbol:   method getRollNumber()
+[ERROR]   location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[134,23] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[135,29] cannot find symbol
+[ERROR]   symbol:   method getPhoneNumber()
+[ERROR]   location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[136,28] cannot find symbol
+[ERROR]   symbol:   method getDepartment()
+[ERROR]   location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/StudentService.java:[137,26] cannot find symbol
+[ERROR]   symbol:   method getSemester()
+[ERROR]   location: variable dto of type in.sp.main.dto.StudentDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[65,25] cannot find symbol
+[ERROR]   symbol:   method setStatus(in.sp.main.model.AttendanceSession.SessionStatus)
+[ERROR]   location: variable existing of type in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[66,25] cannot find symbol
+[ERROR]   symbol:   method setEndTime(java.time.LocalDateTime)
+[ERROR]   location: variable existing of type in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[68,17] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class in.sp.main.service.AttendanceService
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[68,90] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable existing of type in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[72,54] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[85,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class in.sp.main.service.AttendanceService
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[86,18] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable saved of type in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[86,34] cannot find symbol
+[ERROR]   symbol:   method getCourseCode()
+[ERROR]   location: variable course of type in.sp.main.model.Course
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[86,57] cannot find symbol
+[ERROR]   symbol:   method getAttendanceMode()
+[ERROR]   location: variable saved of type in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[90,18] cannot find symbol
+[ERROR]   symbol:   method getAttendanceMode()
+[ERROR]   location: variable saved of type in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[91,25] cannot find symbol
+[ERROR]   symbol:   method getAttendanceMode()
+[ERROR]   location: variable saved of type in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[93,69] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable saved of type in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[95,30] cannot find symbol
+[ERROR]   symbol:   method getQrToken()
+[ERROR]   location: variable qr of type in.sp.main.dto.SessionDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[96,36] cannot find symbol
+[ERROR]   symbol:   method getQrImageBase64()
+[ERROR]   location: variable qr of type in.sp.main.dto.SessionDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[97,41] cannot find symbol
+[ERROR]   symbol:   method getQrExpiresInSeconds()
+[ERROR]   location: variable qr of type in.sp.main.dto.SessionDTO
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[106,16] cannot find symbol
+[ERROR]   symbol:   method setStatus(in.sp.main.model.AttendanceSession.SessionStatus)
+[ERROR]   location: variable session of type in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[107,16] cannot find symbol
+[ERROR]   symbol:   method setEndTime(java.time.LocalDateTime)
+[ERROR]   location: variable session of type in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[109,74] cannot find symbol
+[ERROR]   symbol:   method getCourse()
+[ERROR]   location: variable session of type in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[112,83] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable student of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[113,55] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class in.sp.main.model.AttendanceRecord
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[124,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class in.sp.main.service.AttendanceService
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[135,44] cannot find symbol
+[ERROR]   symbol:   method getSession()
+[ERROR]   location: variable qrToken of type in.sp.main.model.QRToken
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[136,32] cannot find symbol
+[ERROR]   symbol:   method getCourse()
+[ERROR]   location: variable session of type in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[139,20] cannot find symbol
+[ERROR]   symbol:   method getStatus()
+[ERROR]   location: variable session of type in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[140,63] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable session of type in.sp.main.model.AttendanceSession
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[152,29] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable s of type in.sp.main.model.Student
+[ERROR] /D:/Spring Boot Practice Projects/smart-attendance-system/src/main/java/in/sp/main/service/AttendanceService.java:[152,52] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable student of type in.sp.main.model.Student
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
