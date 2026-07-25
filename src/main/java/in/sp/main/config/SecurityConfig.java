@@ -61,9 +61,8 @@ public class SecurityConfig {
                 .csrf(csrf -> csrf.disable())
                 .sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> auth
+                .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
                 .requestMatchers(
-                        "/",
-                        "/error",
                         "/api/auth/**",
                         "/api/attendance/qr/scan",
                         "/api/face/scan",
@@ -72,7 +71,6 @@ public class SecurityConfig {
                         "/api/attendance/sessions/active",
                         "/actuator/health"
                 ).permitAll()
-                .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
                 .requestMatchers(HttpMethod.GET, "/api/teachers/**")
                 .hasAnyRole("ADMIN", "TEACHER")
                 .requestMatchers("/api/teachers/**")
@@ -85,37 +83,46 @@ public class SecurityConfig {
     }
 
     @Bean
-public CorsConfigurationSource corsConfigurationSource() {
+    public CorsConfigurationSource corsConfigurationSource() {
 
-    CorsConfiguration configuration = new CorsConfiguration();
+        CorsConfiguration configuration = new CorsConfiguration();
 
-    configuration.setAllowedOrigins(List.of(
-            "http://localhost:5173",
-            "https://smart-attendance-system-cpt2lrb1k-nilanjeet-gugales-projects.vercel.app"
-    ));
+        configuration.setAllowedOrigins(List.of(
+                "http://localhost:5173",
+                "https://smart-attendance-system-cpt2lrb1k-nilanjeet-gugales-projects.vercel.app",
+                "https://smart-attendance-system-git-main-nilanjeet-gugales-projects.vercel.app"
+        ));
 
-    configuration.setAllowedMethods(List.of(
-            "GET",
-            "POST",
-            "PUT",
-            "DELETE",
-            "PATCH",
-            "OPTIONS"
-    ));
+        configuration.setAllowedMethods(List.of(
+                "GET",
+                "POST",
+                "PUT",
+                "DELETE",
+                "PATCH",
+                "OPTIONS"
+        ));
 
-    configuration.setAllowedHeaders(List.of("*"));
+        configuration.setAllowedHeaders(List.of(
+                "Authorization",
+                "Content-Type",
+                "Accept",
+                "Origin",
+                "X-Requested-With"
+        ));
 
-    configuration.setExposedHeaders(List.of("Authorization"));
+        configuration.setExposedHeaders(List.of(
+                "Authorization"
+        ));
 
-    configuration.setAllowCredentials(true);
+        configuration.setAllowCredentials(true);
 
-    UrlBasedCorsConfigurationSource source =
-            new UrlBasedCorsConfigurationSource();
+        UrlBasedCorsConfigurationSource source
+                = new UrlBasedCorsConfigurationSource();
 
-    source.registerCorsConfiguration("/**", configuration);
+        source.registerCorsConfiguration("/**", configuration);
 
-    return source;
-}
+        return source;
+    }
 
     @Bean
     public UserDetailsService userDetailsService() {
